@@ -39,7 +39,7 @@ element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/di
 element.click()
 
 sleep(5)
-driver.switch_to.active_element.send_keys("What a nice day.")
+driver.switch_to.active_element.send_keys("Wish you all a very Good Afternoon")
 
 # Explicit wait for Post button to clickable
 element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div[4]/div/div/div[1]/div/div[2]/div/div/div/form/div/div[1]/div/div/div[3]/div[2]/div")))
@@ -59,8 +59,14 @@ element.click()
 
 # Send message in textbox
 element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div/div/div/div/div/div/div[2]/div/div[2]/form/div/div[3]/div[2]/div[1]/div/div/div/div/div[2]/div")))
-element.send_keys("Hey")
+element.send_keys("Hey, How are you?")
 
 # Click on send button
 element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div/div/div/div/div/div/div[2]/div/div[2]/form/div/div[3]/span[2]/div")))
+element.click()
+
+# Action for LogOut
+element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div[2]/div[4]/div[1]/span/div/div[1]")))
+element.click()
+element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div[2]/div[4]/div[2]/div/div/div[1]/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[3]/div/div[4]/div")))
 element.click()
